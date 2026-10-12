@@ -1,0 +1,44 @@
+{
+	"name": "pi-ww-cache",
+	"version": "0.1.0",
+	"description": "Pi extension: on-demand /keep-alive toggle for the built-in prompt-cache warmer",
+	"type": "module",
+	"keywords": [
+		"pi-package",
+		"pi-extension",
+		"prompt-cache",
+		"cache-warming",
+		"keep-alive",
+		"anthropic"
+	],
+	"license": "MIT",
+	"author": "raffaelenatale",
+	"homepage": "https://github.com/raffaelenatale/pi-ww-cache#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/raffaelenatale/pi-ww-cache.git"
+	},
+	"bugs": {
+		"url": "https://github.com/raffaelenatale/pi-ww-cache/issues"
+	},
+	"files": [
+		"src/index.ts",
+		"README.md",
+		"LICENSE"
+	],
+	"pi": {
+		"extensions": [
+			"./src/index.ts"
+		]
+	},
+	"peerDependencies": {
+		"@earendil-works/pi-coding-agent": "*"
+	},
+	"devDependencies": {
+		"@earendil-works/pi-coding-agent": "*",
+		"typescript": "^5.9.3"
+	},
+	"scripts": {
+		"typecheck": "tsc --noEmit"
+	}
+}
